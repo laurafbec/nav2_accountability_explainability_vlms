@@ -44,3 +44,11 @@ The reproducibility of the recorded information can be tested with the command
 ros2 bag play <path to rosbag file>
 ```
 A sample of the recorded data can be found [here](https://drive.google.com/drive/folders/19dJu8P5nJbYrA8s7bAF5fEMyJEJk0LYS?usp=sharing).
+
+## Explainability solution
+```
+ros2 launch explicability_bringup explicability_ros.launch.py
+```
+```
+$ ros2 service call /question explicability_msgs/srv/Question "{'question': 'What is happening?'}"
+```
