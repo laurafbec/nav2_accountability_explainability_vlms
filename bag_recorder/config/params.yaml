@@ -1,0 +1,15 @@
+bag_cipher_node:
+  ros__parameters:
+    rosbag_dir: '/home/laura/rosbag_output'
+    rosbag_file_path: 'bag_20230319-1839742163/bag_20230319-1839742163_0.db3'
+    ciphered_bag_dir: '/home/laura/ros2_ws/log_output'
+    ciphered_file_path: 'raw_data.txt'
+    public_key_path: '/home/laura/secrets/public.pem'
+    truststore_password: '123456'
+bag_decipher_node:
+  ros__parameters:
+    ciphered_bag_dir: '/home/laura/ros2_ws/log_output'
+    ciphered_file_path: 'raw_data.txt'
+    private_key_path: '/home/laura/secrets/key.pem'
+    keystore_password: '123456'
+    encrypted_password: 'ac19af1d066330710ae2af5a7da77d115c69f90547c6c818affa5ea6b108c59a0e7d664d32da33ef789e991d864552e2d13c70125205fbf2275ecfdcd7ab02209cfadf1008a5dea0b247b5141d6f3a7dde1b7ecc4713f0aeacbabb9701cb37ef2e1c1a275aa2559a1e16e0b075ecaa0234ef5e3d113e9d3dca433d972d08c817f4e6613e134eaf814cce357c571891e7d56eb3a7a409ed471fdfc0e8f59a37df9fdc94f5732d41ca16ec9dc54fc895597e9318c3091f442bb275f35db858644c730d082ba49a34bd5983faf82e87169e5aea171eccfa8a2abeeeaef34df9b901e5b26218eee669e134a98d91e8292b20a89781377b42497191fd2cd404bbed9e'
