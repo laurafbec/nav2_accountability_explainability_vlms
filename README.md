@@ -50,5 +50,5 @@ A sample of the recorded data can be found [here](https://drive.google.com/drive
 ros2 launch explicability_bringup explicability_ros.launch.py
 ```
 ```
-$ ros2 service call /question explicability_msgs/srv/Question "{'question': 'What is happening?'}"
+$ ros2 service call /question explicability_msgs/srv/Question "{'question': 'What is in the center of the image?'}"
 ```
